@@ -7,9 +7,9 @@ import tensorflow as tf
 
 app=FastAPI()
 
-Model=tf.keras.models.load_model("potatoes.h5")
+Model=tf.keras.models.load_model("potatoes.h5")#model is uploaded
 
-class_names=["early_bright","late_bright","healthy"]
+class_names=["early_bright","late_bright","healthy"]#classes to be predicted
 
 #Function defined to convert bytes to image 
 def convert_bytes_to_image(data):
